@@ -23,7 +23,7 @@ jobs:
 
     # steps는 작업(여기서는 build)의 일부로 실행될 일련의 작업들을 나타냄
     steps:
-      # 코드를 checkout하는 액션 사용. 레포지토리의 코드를 가상 환경으로 가져옴
+      # checkout action으로 코드 내려 받기. 레포지토리의 코드를 가상 환경으로 가져옴. @v4는 checkout의 버전을 나타냄
       - uses: actions/checkout@v4
 
       # Run a one-line script 라는 이름의 step을 정의
